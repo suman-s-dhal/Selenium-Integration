@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="LoginTest" preserve-order="true">
+		<classes>
+			<class name="tests.LoginTest">
+				<methods>
+					<include name="login" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="AssetTest" preserve-order="true">
+		<classes>
+			<class name="tests.AssetTest">
+				<methods>
+					<include name="validateAsset" />
+ 					<include name="validateAssetSearch" /> 
+					<include name="validateAddFile" />
+					<include name="validateAddYoutube" />
+ 					<include name="validateAddFolder" /> 
+ 					<include name="validatePlayAsset" />
+ 					<include name="validateView" /> 
+ 					<include name="validateDeleteAsset" /> 
+ 					<include name="validateAssetCreateCourse" /> 
+				</methods>
+			</class>
+		</classes>
+ 	</test>  
+	<test name="CourseTest" preserve-order="true"> 
+		<classes> 
+			<class name="tests.CourseTest">
+ 				<methods> 
+ 					<include name="ValidateCourse" /> 
+ 					<include name="validateCourseSearch" /> 
+ 					<include name="validateCourseUpload" />
+ 					<include name ="validateCourseSummary" />
+ 				</methods> 
+ 			</class> 
+ 		</classes> 
+ 	</test> 
+</suite> 
+
