@@ -16,8 +16,8 @@ public class LoginPage extends TestBase {
 	@FindBy(css = "#password")
 	public static WebElement password;
 
-	@FindBy(xpath = "//*[@id='root']/div/div/div/div[2]/form/div[5]/div/div/span/button")
-	public static WebElement signin;
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div/div/div/ul/li[1]/ul/li/i")
+	public static WebElement StagingwahidWorkspace;
 	
 	@FindBy(xpath = "//li[1]//ul[1]")
 	public static WebElement button;
@@ -36,6 +36,7 @@ public class LoginPage extends TestBase {
 		password.sendKeys("kloudone@123");
 		signin.click(); 
 		button.click();
+		StagingwahidWorkspace.click();
 	}
 	
 	
