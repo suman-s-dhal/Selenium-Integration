@@ -19,10 +19,10 @@ public class TestBase {
 	    	ChromeOptions options = new ChromeOptions();
 	    	options.addArguments("use-fake-ui-for-media-stream");
 	    	System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
-	    	System.setProperty("webdriver.chrome.driver", "/home/narmadha/Downloads/chromedriver_linux64/chromedriver.exe");
+	    	System.setProperty("webdriver.chrome.driver", "/root/chromedriver_linux64/chromedriver.exe");
 	        browser = new ChromeDriver(options);
 	        browser.manage().window().maximize();
-	        browser.get("https://app.kloudlearn.com/");
+	        browser.get("https://app.staging-env.kloudlearn.com/auth/login");
 	        browser.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	    }
 
