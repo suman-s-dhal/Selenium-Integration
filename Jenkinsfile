@@ -1,8 +1,5 @@
 pipeline {
   agent { label 'demo-slave' }
-    tools {
-        maven 'm5'
-    }
   stages {
     stage('Execute Selenium Tests from Github Repo Using Jenkins Pipeline') {
       steps {
