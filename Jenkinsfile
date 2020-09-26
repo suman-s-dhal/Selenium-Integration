@@ -1,5 +1,7 @@
+#!/usr/bin/env groovy
+
 pipeline {
-  agent { label 'demo-slave' }
+  agent any
   stages {
     stage('Execute Selenium Tests from Github Repo Using Jenkins Pipeline') {
       steps {
