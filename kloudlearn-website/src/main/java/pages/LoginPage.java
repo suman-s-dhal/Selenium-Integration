@@ -22,6 +22,8 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath = "//li[1]//ul[1]")
 	public static WebElement button;
 	
+	@FindBy(xpath = "//*[@id='root']/div/div/div/div[2]/form/div[5]/div/div/span/button")
+	public static WebElement signin;
 	
 	
 	private  static WebDriverWait wait =new WebDriverWait(browser, 30);
@@ -35,7 +37,7 @@ public class LoginPage extends TestBase {
 		username.sendKeys("narmadhasg1398@gmail.com");
 		password.sendKeys("kloudone@123");
 		signin.click(); 
-		button.click();
+		//button.click();
 		StagingwahidWorkspace.click();
 	}
 	
