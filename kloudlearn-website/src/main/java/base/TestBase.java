@@ -18,6 +18,7 @@ public class TestBase {
 	    	
 	    	ChromeOptions options = new ChromeOptions();
 		options.addArguments("--no-sandbox");
+		options.addArguments("--headless");
 		options.addArguments("--disable-dev-shm-usage");
 	    	options.addArguments("use-fake-ui-for-media-stream");
 	    	System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
