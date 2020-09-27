@@ -19,7 +19,7 @@ public class TestBase {
 	    	ChromeOptions options = new ChromeOptions();
 	    	options.addArguments("use-fake-ui-for-media-stream");
 	    	System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
-	    	System.setProperty("webdriver.chrome.driver", "/root/chromedriver_linux64/chromedriver.exe");
+	    	System.setProperty("webdriver.chrome.driver", "/root/chromedriver");
 	        browser = new ChromeDriver(options);
 	        browser.manage().window().maximize();
 	        browser.get("https://app.staging-env.kloudlearn.com/auth/login");
