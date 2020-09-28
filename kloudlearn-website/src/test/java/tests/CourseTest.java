@@ -12,14 +12,14 @@ public class CourseTest {
 		CoursePage CoursePage;
 		//SoftAssert softAssert = new SoftAssert();
 		  
-		@BeforeClass
+	/*	@BeforeClass
 		public void setUp(){
 			//initialization();
 		    CoursePage = new CoursePage();
 		       
 		    }
 
-		/*@Test
+		@Test
 		public void ValidateCourse() throws InterruptedException
 		{
 			pages.CoursePage.SelectCourse();
