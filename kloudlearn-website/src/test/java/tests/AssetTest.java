@@ -26,12 +26,12 @@ public class AssetTest{
 	
 	SoftAssert softAssert = new SoftAssert();
 	  
-	@BeforeClass
+/*	@BeforeClass
 	public void AssetModule(){
 		 AssetsPage = new AssetsPage();
 	       
 	    }
-/*	@Test
+	@Test
 	public void validateAsset() throws InterruptedException
 	{
 		pages.AssetsPage.asset();
