@@ -802,11 +802,11 @@ public class AssetsPage extends TestBase {
 
 	}
 
-	public static String getSearchTitle() {
+/*	public static String getSearchTitle() {
 
 		String searchTitle = GetSearchtitle.getText();
 		return searchTitle;
-	}
+	} */
 
 	public static void course() throws InterruptedException {
 		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
@@ -815,13 +815,13 @@ public class AssetsPage extends TestBase {
 		CloseCourse.click();
 	}
 
-	public static String getPlayvideoTitle() {
+/*	public static String getPlayvideoTitle() {
 		String videoTitle = GetPlayVideoTitle.getText();
 		return videoTitle;
-	}
+	} */
 
 	
-	public static void filterLast7days() throws InterruptedException {
+/*	public static void filterLast7days() throws InterruptedException {
 		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		filter.click();
 		assertTypeSearch.click();
@@ -836,7 +836,7 @@ public class AssetsPage extends TestBase {
 		LastSevenDays.click();
 		Resetall.click();
 
-	}
+	} */
 
 /*	public static void filterLast30days() throws InterruptedException {
 		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
@@ -930,10 +930,10 @@ public class AssetsPage extends TestBase {
 
 	}
 
-	public static String getDeleteTitle() {
+/*	public static String getDeleteTitle() {
 		String DeleteTitle = GetDeleteTitle.getText();
 		return DeleteTitle;
-	}
+	} */
 
 	public static void AssetCreateCourse() throws InterruptedException {
 		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
