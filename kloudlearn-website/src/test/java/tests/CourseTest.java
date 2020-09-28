@@ -83,7 +83,7 @@ public class CourseTest {
 			System.out.println("finish");
 		}
 		
-		@Test
+	/*	@Test
 		public void validateCourseSummary() {
 			pages.CoursePage.CourseSummary();
 		}
@@ -96,5 +96,5 @@ public class CourseTest {
 		@Test
 		public void validateCourseUpload() {
 			pages.CoursePage.Course();
-		}
+		} */
 }
