@@ -449,14 +449,13 @@ public class CoursePage extends TestBase {
 			Recent.click();
 		}
 		
-		public static void SelectSearch() throws InterruptedException {
+	/*	public static void SelectSearch() throws InterruptedException {
 			browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 			CourseSearch.sendKeys("React");
 			Thread.sleep(2000);
 			ClickSearch.click();
 			ClearCourseSearch.click();
-		}
-
+		}  */
 		public static void SelectAssignedCourse() {
 			browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 			assignedcourse.click();
