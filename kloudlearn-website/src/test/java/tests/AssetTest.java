@@ -1,4 +1,4 @@
-package tests;
+/*package tests;
 
 import static base.TestBase.initialization;
 
@@ -26,7 +26,7 @@ public class AssetTest{
 	
 	SoftAssert softAssert = new SoftAssert();
 	  
-/*	@BeforeClass
+	@BeforeClass
 	public void AssetModule(){
 		 AssetsPage = new AssetsPage();
 	       
