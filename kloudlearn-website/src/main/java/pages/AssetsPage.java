@@ -782,7 +782,7 @@ public class AssetsPage extends TestBase {
 	}
 
 	public static void asset() throws InterruptedException {
-
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		assets.click();
 		ListGrid.click();
 		Thread.sleep(1000);
@@ -792,6 +792,7 @@ public class AssetsPage extends TestBase {
 	}
 
 	public static void AssetSearch() throws InterruptedException {
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		search.click();
 		search.sendKeys("Perl");
 		Thread.sleep(3000);
@@ -807,6 +808,7 @@ public class AssetsPage extends TestBase {
 	}
 
 	public static void course() throws InterruptedException {
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		SelectCourse.click();
 		Thread.sleep(2000);
 		CloseCourse.click();
@@ -819,6 +821,7 @@ public class AssetsPage extends TestBase {
 
 	
 	public static void filterLast7days() throws InterruptedException {
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		filter.click();
 		assertTypeSearch.click();
 		assertTypeSearch.sendKeys("Video");
@@ -834,7 +837,8 @@ public class AssetsPage extends TestBase {
 
 	}
 
-	public static void filterLast30days() throws InterruptedException {
+/*	public static void filterLast30days() throws InterruptedException {
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		filter.click();
 		assertTypeSearch.click();
 		assertTypeSearch.sendKeys("Video");
@@ -871,10 +875,10 @@ public class AssetsPage extends TestBase {
 	public static String getFilterImageTitle() {
 		String ImageTitle = GetImageTitle.getText();
 		return ImageTitle;
-	}
+	} */
 
 	public static void AssetViewCourse() throws InterruptedException {
-
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		SelectVideo.click();
 		View.click();
 		Thread.sleep(3000);
@@ -883,12 +887,14 @@ public class AssetsPage extends TestBase {
 	}
 	
 	public static void AssetActionView() {
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		AssetAction.click();
 		ActionView.click();
 		CloseCourse.click();
 	}
 
 	public static void ActionEdit() throws InterruptedException {
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		AssetAction.click();
 		ActionEdit.click();
 		ActionEditName.clear();
@@ -914,7 +920,7 @@ public class AssetsPage extends TestBase {
 	
 	
 	public static void AssetDeleteVideo() throws InterruptedException {
-
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		SelectVideo_Delete.click();
 		DeleteAssetVideo.click();
 		Thread.sleep(1000);
@@ -929,7 +935,7 @@ public class AssetsPage extends TestBase {
 	}
 
 	public static void AssetCreateCourse() throws InterruptedException {
-
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		SelectVideo.click();
 		CreateCourse.click();
 		CourseTitle.sendKeys("Title");
@@ -1069,7 +1075,7 @@ public class AssetsPage extends TestBase {
 	
 	
 	public static void AssetAddArticle() throws InterruptedException {
-
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		Add.click();
 		AddCreateArticle.click();
 		AddArticleTitle.click();
@@ -1085,7 +1091,8 @@ public class AssetsPage extends TestBase {
 	}
 
 	public static void AddFile() throws InterruptedException {
-		Thread.sleep(3000);
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+		//Thread.sleep(3000);
 		Add.click();
 		Thread.sleep(3000);
 		AddFile.sendKeys("/home/narmadha/Downloads/winner-badge-8228225.jpg");
@@ -1093,7 +1100,8 @@ public class AssetsPage extends TestBase {
 	}
 
 	public static void AddFolder() throws InterruptedException {
-		Thread.sleep(3000);
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+		//Thread.sleep(3000);
 		Add.click();
 		Thread.sleep(3000);
 		AddFolder.sendKeys("/home/narmadha/Downloads/sampleImages");
@@ -1137,6 +1145,7 @@ public class AssetsPage extends TestBase {
 	}
 
 	public static void AddCreateQuiz() throws IOException, InterruptedException {
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		Add.click();
 		AddClickQuiz.click();
 		
@@ -1170,6 +1179,7 @@ public class AssetsPage extends TestBase {
 	}
 	
 	public static void AddRecorVideo() throws InterruptedException {
+		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		Add.click();
 		AddRecordVideo.click();
 		ClickStartRecord.click();
