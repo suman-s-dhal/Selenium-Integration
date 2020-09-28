@@ -56,7 +56,7 @@ public class CoursePage extends TestBase {
 				}
 		
 		public static void SelectRecentCourse() throws InterruptedException {
-			Thread.sleep(6000);
+			browser.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			RecentCourse.click();
 			Thread.sleep(2000);
 			A_Z.click();
@@ -64,7 +64,7 @@ public class CoursePage extends TestBase {
 		}
 		
 		public static void SelectSearch() throws InterruptedException {
-			
+			browser.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			CourseSearch.sendKeys("Courses");
 			Thread.sleep(2000);
 			ClickSearch.click();
@@ -73,6 +73,7 @@ public class CoursePage extends TestBase {
 		}
 
 		public static void Course() {
+			browser.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			ClickCreateCourse.click();
 			ClickScromCourse.click();
 		//	ScromCourse.click();
@@ -84,6 +85,7 @@ public class CoursePage extends TestBase {
 		}
 		
 		public static void CourseSummary() {
+			browser.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			CourseSummary.click();
 		}
 	}
