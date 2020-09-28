@@ -88,7 +88,7 @@ public class AssetTest{
 		String expectedTitle = "Selenium WebDriver Tutorial | Selenium WebDriver Tutorial For Beginner | Selenium | Simplilearn";
 		softAssert2.assertEquals(actualTitle,expectedTitle);
 		System.out.println("play video are same");
-		softAssert.assertAll(); */
+		softAssert.assertAll(); 
 	}
 	
 /*	@Test
@@ -101,7 +101,7 @@ public class AssetTest{
 		String expectedTitle = "api test image.png";
 		softAssert3.assertEquals(actualTitle,expectedTitle,"Filter is working");
 		softAssert.assertAll(); 
-	} */
+	} 
 	
 /*	@Test
 	public void validateEdit() throws InterruptedException {
