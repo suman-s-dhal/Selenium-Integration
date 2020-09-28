@@ -1,4 +1,4 @@
-package pages;
+/*package pages;
 
 import static base.TestBase.browser;
 
@@ -342,7 +342,7 @@ public class AssetsPage extends TestBase{
 		
 				
 		@FindBy(xpath = "")
-		public static WebElement ; */
+		public static WebElement ; 
 
 		
 		
@@ -484,7 +484,7 @@ public class AssetsPage extends TestBase{
 		
 		
 		@FindBy(xpath = "")
-		public static WebElement ; */
+		public static WebElement ; 
 	
 		
 		
@@ -687,7 +687,7 @@ public class AssetsPage extends TestBase{
 		public static WebElement ;
 		
 		@FindBy(xpath = "")
-		public static WebElement ;  */
+		public static WebElement ;  
 		
 		
 		// Assertion 
@@ -810,7 +810,7 @@ public class AssetsPage extends TestBase{
 		String ImageTitle = GetImageTitle.getText();
 		return ImageTitle;
 	} 
-*/
+
 		
 	public static void AssetViewCourse() throws InterruptedException {
 		browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
@@ -877,7 +877,7 @@ public class AssetsPage extends TestBase{
 		ClickArticle.click();
 	/*	Thread.sleep(2000);
 		Actions action = new Actions(browser);
-		action.moveToElement(browser.findElement(By.className("ant-dropdown-trigger"))).build().perform();*/
+		action.moveToElement(browser.findElement(By.className("ant-dropdown-trigger"))).build().perform();
 		AddTitle.click();
 		AddTitleName.sendKeys("Title");
 		Preview.click();
@@ -1030,9 +1030,9 @@ public class AssetsPage extends TestBase{
 		
 		
 		
-	}  */
+	}  
 	
 
 
-}
+}*/
 
