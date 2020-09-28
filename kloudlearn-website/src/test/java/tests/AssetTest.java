@@ -95,11 +95,11 @@ public class AssetTest{
 		System.out.println("Asset Add Article");
 	}
 
-	@Test
+/*	@Test
 	public void validateAddQuiz() throws IOException, InterruptedException {
 		pages.AssetsPage.AddCreateQuiz();
 		System.out.println("Asset Create Quiz");
-	}
+	} */
 	
 	
 	@Test
