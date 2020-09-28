@@ -51,7 +51,7 @@
  					<include name="validateCourseAgenda" />
  					<include name="validateAssignLearner" />
 <!--  					<include name="validateCourseUpload" /> -->
- 					<include name ="validateCourseSummary" />
+ 				<!--	<include name ="validateCourseSummary" />  -->
  				</methods> 
  			</class> 
  		</classes> 
