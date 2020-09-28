@@ -1,4 +1,4 @@
-package tests;
+/*package tests;
 
 import static base.TestBase.initialization;
 
@@ -12,7 +12,7 @@ public class CourseTest {
 		CoursePage CoursePage;
 		//SoftAssert softAssert = new SoftAssert();
 		  
-	/*	@BeforeClass
+		@BeforeClass
 		public void setUp(){
 			//initialization();
 		    CoursePage = new CoursePage();
