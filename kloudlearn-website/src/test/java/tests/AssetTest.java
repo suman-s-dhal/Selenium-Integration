@@ -31,7 +31,7 @@ public class AssetTest{
 		 AssetsPage = new AssetsPage();
 	       
 	    }
-	@Test
+/*	@Test
 	public void validateAsset() throws InterruptedException
 	{
 		pages.AssetsPage.asset();
@@ -39,7 +39,7 @@ public class AssetTest{
 	/*	String currentUrl = browser.getCurrentUrl();
 	    softAssert.assertEquals(currentUrl, "https://customer-focused.kloudlearn.com/assets");
 	    System.out.println("Asset url are same");
-		softAssert.assertAll(); */
+		softAssert.assertAll(); 
 	}	
 	
 	@Test
@@ -50,7 +50,7 @@ public class AssetTest{
 		String actualTitle =  pages.AssetsPage.getSearchTitle();
 		String expectedTitle = "Why newboston";	
 		softAssert1.assertEquals(actualTitle,expectedTitle);
-		softAssert.assertAll(); */
+		softAssert.assertAll(); 
 	} 
 	
 	@Test
@@ -112,7 +112,7 @@ public class AssetTest{
 		pages.AssetsPage.assetEdit();  
 		softAssert4.assertEquals(true,true); 
 		
-	} */
+	} 
 	
 	@Test
 	public void validateView() throws InterruptedException {
@@ -122,7 +122,7 @@ public class AssetTest{
 /*		SoftAssert softAssert5 = new SoftAssert();
 		String currentUrl1 = browser.getCurrentUrl(); 
 		softAssert5.assertEquals(currentUrl1,"https://customer-focused.kloudlearn.com/assets/view/15393");
-		softAssert.assertAll(); */
+		softAssert.assertAll(); 
 	} 
 	
 	@Test
@@ -134,7 +134,7 @@ public class AssetTest{
 		String actualTitle = pages.AssetsPage.getDeleteTitle();
 		String expectedTitle = "Do you want to delete these assets?";
 		softAssert6.assertEquals(actualTitle,expectedTitle,"Delete is working");
-		softAssert.assertAll(); */ 
+		softAssert.assertAll(); 
 		
 	} 
 
@@ -144,7 +144,7 @@ public class AssetTest{
 		pages.AssetsPage.AssetCreateCourse();
 		System.out.println("Asset CreateCourse");
 	}
-}
+}*/
 
 	
 	
