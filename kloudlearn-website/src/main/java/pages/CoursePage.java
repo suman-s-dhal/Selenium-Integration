@@ -1,4 +1,4 @@
-package pages;
+/*package pages;
 
 import java.util.concurrent.TimeUnit;
 
@@ -89,5 +89,5 @@ public class CoursePage extends TestBase {
 			CourseSummary.click();
 		}
 	}
-
+*/
 
