@@ -716,7 +716,7 @@ public class AssetsPage extends TestBase{
 
 		
 		public static void asset() throws InterruptedException {
-
+			browser.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 			assets.click();
 			ListGrid.click(); 
 			Thread.sleep(1000);
@@ -727,6 +727,7 @@ public class AssetsPage extends TestBase{
 		
 			
 		public static void AssetSearch() throws InterruptedException {
+			browser.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 			search.click();	
 			search.sendKeys("Why");
 			Thread.sleep(3000);
@@ -743,6 +744,7 @@ public class AssetsPage extends TestBase{
 		
 		
 		public static void course() throws InterruptedException {
+			browser.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 			SelectCourse.click();
 			Thread.sleep(2000);
 			CloseCourse.click();
@@ -811,7 +813,7 @@ public class AssetsPage extends TestBase{
 */
 		
 	public static void AssetViewCourse() throws InterruptedException {
-		
+		browser.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		SelectVideo.click();
 		View.click();
 		Thread.sleep(3000);
@@ -820,7 +822,7 @@ public class AssetsPage extends TestBase{
 	} 
 	
 	public static void AssetDeleteVideo() throws InterruptedException {
-		
+		browser.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		SelectVideo_Delete.click();
 		DeleteAssetVideo.click();
 		Thread.sleep(1000);
@@ -835,7 +837,7 @@ public class AssetsPage extends TestBase{
 	}
 
 	public static void AssetCreateCourse() throws InterruptedException {
-		
+		browser.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		SelectVideo.click();
 		CreateCourse.click();
 		CourseTitle.sendKeys("Title");
@@ -961,7 +963,7 @@ public class AssetsPage extends TestBase{
 	
 	public static void AssetAdd() throws InterruptedException {
 		
-		
+		browser.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		Add.click();
 		AddCreateArticle.click();
 		AddArticleTitle.click();
@@ -976,14 +978,16 @@ public class AssetsPage extends TestBase{
 		
 	}
 	public static void AddFile() throws InterruptedException {
-		Thread.sleep(3000);
+		browser.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+		//Thread.sleep(3000);
 		Add.click();
 		Thread.sleep(3000);
 		AddFile.sendKeys("/home/narmadha/Downloads/winner-badge-8228225.jpg");
 	}
 
 	public static void AddFolder() throws InterruptedException {
-		Thread.sleep(3000);
+		browser.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+		//Thread.sleep(3000);
 		Add.click();
 		Thread.sleep(3000);
 		AddFolder.sendKeys("/home/narmadha/Downloads/python-3.8.4-docs-pdf-letter");
@@ -991,7 +995,8 @@ public class AssetsPage extends TestBase{
 
 	
 	public static void AddYoutube() throws InterruptedException {
-		Thread.sleep(3000);
+		browser.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+		//Thread.sleep(3000);
 		AddYoutube.click();
 		Thread.sleep(3000);
 		AddSearchYoutube.click();
