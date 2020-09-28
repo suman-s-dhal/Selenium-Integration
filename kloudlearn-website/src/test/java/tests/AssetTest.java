@@ -115,7 +115,7 @@ public class AssetTest{
 		softAssert.assertAll(); */
 	}
 	
-	@Test
+/*	@Test
 	public void validatefilter() throws InterruptedException {
 		pages.AssetsPage.filterLast7days();
 		pages.AssetsPage.filterLast30days();
@@ -126,7 +126,7 @@ public class AssetTest{
 		String expectedTitle = "api test image.png";
 		softAssert3.assertEquals(actualTitle,expectedTitle,"Filter is working");
 		softAssert.assertAll(); 
-	} 
+	} */
 	
 //	@Test
 //	public void validateEdit() throws InterruptedException {
