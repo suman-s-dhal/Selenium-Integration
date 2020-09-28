@@ -10,7 +10,7 @@
 			</class>
 		</classes>
 	</test>
-<!--	<test name="AssetTest" preserve-order="true">
+	<test name="AssetTest" preserve-order="true">
 		<classes>
 			<class name="tests.AssetTest">
 				<methods>
@@ -19,10 +19,19 @@
 					<include name="validateAddFile" />
 					<include name="validateAddYoutube" />
  					<include name="validateAddFolder" /> 
+ 					<include name = "validateAddQuiz" />
  					<include name="validatePlayAsset" />
+					<include name="validatefilter" /> 
  					<include name="validateView" /> 
+ 					<include name="ValidateAction" />
+ 					<include name="ValidateActionEdit" />
  					<include name="validateDeleteAsset" /> 
- 					<include name="validateAssetCreateCourse" /> 
+ 				<!--	<include name="validatefilter" />   -->
+ 					<include name="validateAssetCreateCourse" />
+ 					<include name="valideAssetCreateCourseRecord" />
+ 					<include name="validateAssetCreate" />
+ 					<include name="validateCourseAgenda" />
+ 					<include name="validateAssignLearners" /> 
 				</methods>
 			</class>
 		</classes>
@@ -33,11 +42,19 @@
  				<methods> 
  					<include name="ValidateCourse" /> 
  					<include name="validateCourseSearch" /> 
- 					<include name="validateCourseUpload" />
+ 					<include name="validateKloudlearnCourse" />
+ 					<include name= "ValidateCompletionSetting"/>
+ 					<include name = "ValidateAssessmentSetting" />
+ 					<include name="ValidateCertificateSetting" />
+ 					<include name="ValidateAssignSkills" />
+ 					<include name="validateCourseSetting" />
+ 					<include name="validateCourseAgenda" />
+ 					<include name="validateAssignLearner" />
+<!--  					<include name="validateCourseUpload" /> -->
  					<include name ="validateCourseSummary" />
  				</methods> 
  			</class> 
  		</classes> 
- 	</test> --> 
+ 	</test> 
 </suite> 
 
