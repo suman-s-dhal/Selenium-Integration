@@ -56,6 +56,7 @@ public class CoursePage extends TestBase {
 				}
 		
 		public static void SelectRecentCourse() throws InterruptedException {
+			Thread.sleep(6000);
 			RecentCourse.click();
 			Thread.sleep(2000);
 			A_Z.click();
@@ -63,6 +64,7 @@ public class CoursePage extends TestBase {
 		}
 		
 		public static void SelectSearch() throws InterruptedException {
+			
 			CourseSearch.sendKeys("Courses");
 			Thread.sleep(2000);
 			ClickSearch.click();
