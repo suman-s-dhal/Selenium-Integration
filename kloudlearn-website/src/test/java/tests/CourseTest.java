@@ -19,7 +19,7 @@ public class CourseTest {
 		       
 		    }
 
-		@Test
+		/*@Test
 		public void ValidateCourse() throws InterruptedException
 		{
 			pages.CoursePage.SelectCourse();
@@ -42,3 +42,4 @@ public class CourseTest {
 			pages.CoursePage.CourseSummary();
 		}
 }
+*/
