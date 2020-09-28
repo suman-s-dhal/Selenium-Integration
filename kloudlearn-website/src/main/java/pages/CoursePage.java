@@ -428,11 +428,12 @@ public class CoursePage extends TestBase {
 		
 	    public CoursePage(){
 	        PageFactory.initElements(browser, this);
-	        browser.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	        //browser.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	    }
 
 		
 		public static void SelectCourse() {
+			browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 			ClickCourse.click();
 				}
 		
@@ -448,6 +449,7 @@ public class CoursePage extends TestBase {
 		}
 		
 		public static void SelectSearch() throws InterruptedException {
+			browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 			CourseSearch.sendKeys("React");
 			Thread.sleep(2000);
 			ClickSearch.click();
@@ -455,15 +457,18 @@ public class CoursePage extends TestBase {
 		}
 
 		public static void SelectAssignedCourse() {
+			browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 			assignedcourse.click();
 		}
 		
 		public static void SelectOrganisationCourse() {
+			browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 			orgcourse.click();
 			
 		}
 		
-		public static void Course() {
+	/*	public static void Course() {
+			browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 			ClickCreateCourse.click();
 		//	kloudlearnCourse.click();
 			
@@ -473,9 +478,10 @@ public class CoursePage extends TestBase {
 		//	action.moveToElement(browser.findElement(By.className("ant-upload ant-upload-drag"))).click().perform();
 	//		ScromCourse.sendKeys("/home/narmadha/Downloads/SequencingPostTestRollup4thEd_SCORM20044thEdition.zip");
 					
-		}
+		}*/
 		
 		public static void Kloudlearncourse() throws InterruptedException {
+			browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 			ClickCreateCourse.click();
 			kloudlearnCourse.click();
 			
@@ -602,6 +608,7 @@ public class CoursePage extends TestBase {
 		}
 		
 		public static void CompletionSetting() throws InterruptedException {
+			browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 			CompletionSetting.click();
 		//	ShowButtonCompletion.click();
 			Thread.sleep(2000);
@@ -700,9 +707,10 @@ public class CoursePage extends TestBase {
 		
 		
 		
-		public static void CourseSummary() {
+	/*	public static void CourseSummary() {
+			browser.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 			CourseSummary.click();
-		}
+		} */
 	}
 
 
