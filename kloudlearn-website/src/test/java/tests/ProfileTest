@@ -1,0 +1,28 @@
+package test;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import pages.Profile;
+
+public class ProfileTest {
+		Profile Profile;
+		
+		
+		
+		@BeforeClass
+		public void profilemodule(){
+		Profile = new Profile();     
+		}
+
+		@Test  
+		public static void selectprofile() throws InterruptedException
+		{
+			pages.Profile.editprofile();
+		}
+		@Test
+		public static void updatepro() throws InterruptedException
+		{
+			pages.Profile.updateprofie();
+		 }
+
+}
