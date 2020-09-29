@@ -34,8 +34,8 @@ public class LoginPage extends TestBase {
 
 	
 	public static void signin() {
-		username.sendKeys("narmadhasg1398@gmail.com");
-		password.sendKeys("kloudone@123");
+		username.sendKeys("wahid@kloudone.com");
+		password.sendKeys("test@123");
 		signin.click(); 
 		//button.click();
 		StagingwahidWorkspace.click();
