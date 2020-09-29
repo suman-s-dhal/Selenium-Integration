@@ -1,0 +1,146 @@
+package pages;
+
+
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoAlertPresentException;
+
+import static base.TestBase.browser;
+
+import java.util.concurrent.TimeUnit;
+
+import org.apache.http.util.Asserts;
+//import org.testng.Assert;
+
+import base.TestBase;
+
+public class Profile extends TestBase {
+	
+
+	@FindBy(xpath = "//*[@id=\"right-click-menu\"]/div[1]/div/div[2]")
+	public static WebElement clickprofile;
+	
+	@FindBy(xpath = "//a[@class='profile-link']")
+	public static WebElement clickmanageprofile;
+	
+	@FindBy(xpath ="//div[@class='ProfileHover']//i[@class='anticon anticon-edit']//*[local-name()='svg']//*[name()='path' and contains(@d,'M257.7 752')]")
+    public static WebElement changeprofile;
+	
+	@FindBy(xpath = "//div[@id='firstName']//i[@class='anticon anticon-edit edit-icon']//*[local-name()='svg']")
+	public static WebElement firstnameedit;
+	
+	@FindBy(xpath ="//input[@id='firstName']")
+	public static WebElement firstname;
+	
+	@FindBy(xpath ="//i[@class='anticon anticon-check']")
+	public static WebElement firstnameok;
+	
+	
+	@FindBy(xpath = "//div[@id='lastName']//i[@class='anticon anticon-edit edit-icon']//*[local-name()='svg']")
+	public static WebElement lastnameedit;
+	
+	@FindBy(xpath ="//input[@id='lastName']")
+	public static WebElement lastname;
+	
+	@FindBy(xpath ="//i[@class='anticon anticon-check']")
+	public static WebElement lastnameok;
+	
+	@FindBy(xpath = "//div[@id='phone']//i[@class='anticon anticon-edit edit-icon']//*[local-name()='svg']")
+	public static WebElement phonenumberedit;
+	
+	@FindBy(xpath = "//input[@id='phone']")
+	public static WebElement phonenumber;
+	
+	@FindBy(xpath ="//i[@class='anticon anticon-check']")
+	public static WebElement phonenumberok;
+	
+	/*indBy(xpath ="//span[@id='email']")
+	public boolean WebElement email;
+	
+	@FindBy(xpath ="//span[@id='organization']")
+	public boolean WebElement workspace;*/
+	
+	@FindBy(xpath = "//button[@class='ant-btn ant-btn-primary']")	
+	public static WebElement update;
+	
+	@FindBy(xpath = "//div[contains(@class,'ant-tabs-tab-active ant-tabs-tab')]")
+	public static WebElement skilltab;
+	
+	@FindBy(xpath ="//*[name()='path' and contains(@d,'M696 480H5')]")
+	public static WebElement addskills;
+
+	@FindBy(xpath ="//input[@id='add_skill_modal_skill']")
+	public static WebElement enterskillname;
+
+	@FindBy(xpath ="//input[@id='add_skill_modal_rating']")
+	public static WebElement skillrating;
+
+	@FindBy(xpath ="//div[contains(@class,'ant-modal-footer')]//button[contains(@class,'ant-btn ant-btn-primary')]")
+	public static WebElement saveskill;
+
+	@FindBy(xpath ="//div[contains(text(),'Badges')]")
+	public static WebElement badgetab;
+
+	@FindBy(xpath ="//div[contains(text(),'Certifications')]")
+	public static WebElement certificatetab;
+	
+	@FindBy(xpath ="//div[text()='Issued on']")
+	public static WebElement certificateview;
+
+    @FindBy(xpath="//div[@class='CetificateHover']//i[@class='anticon anticon-download']//*[local-name()='svg']")
+	public static WebElement downcertificate;
+	
+	@FindBy(xpath ="//i[@class='anticon anticon-close ant-modal-close-icon']//*[local-name()='svg']")
+	public static WebElement closeceritifcate;
+	
+	private  static WebDriverWait wait =new WebDriverWait(browser, 30);
+
+    public Profile(){
+        PageFactory.initElements(browser, this);
+    }
+
+	
+	public static void editprofile() throws InterruptedException, NoAlertPresentException{	
+		//clicking profile 
+		clickprofile.click();
+		clickmanageprofile.click(); 
+		firstnameedit.click();
+		firstname.sendKeys(Keys.chord(Keys.CONTROL,"a"));
+ 		firstname.sendKeys("Analytics");
+		firstnameok.click();
+		lastnameedit.click();
+		Thread.sleep(1000);
+		lastname.clear();
+		lastname.sendKeys("Testing");
+		lastnameok.click();
+		phonenumberedit.click();
+		phonenumber.clear();
+		phonenumber.sendKeys("09374837238");
+		phonenumberok.click();
+		update.click();
+		//browser.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+	
+	public static void updateprofie() throws InterruptedException{
+		skilltab.click();
+		addskills.click();
+		enterskillname.click();
+		enterskillname.clear();
+		enterskillname.sendKeys("cloudarchitect");
+		skillrating.click();
+		skillrating.sendKeys("10");
+		saveskill.click();
+		badgetab.click();
+		Thread.sleep(3000);
+		certificatetab.click();
+		Thread.sleep(3000);
+		certificateview.click();
+		downcertificate.click();
+		closeceritifcate.click();		
+	}
+
+}
